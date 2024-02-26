@@ -34,11 +34,11 @@ def add_new_data(datasets_dir, new_data_dir):
     with zipfile.ZipFile(new_data_zip, 'r') as new_data_zip:
         new_data_zip.extractall(tmp_new_data_dir)
 
-    # Zip the updated dataset in data folder
+    # Zip the updated dataset in datasets folder
     now = datetime.now()
     current_time = now.strftime("%Y_%m_%d_%Hh%M")
     new_zip_name = f"dataset_{current_time}"
-    shutil.make_archive(os.path.join(datasets_dir, "..", new_zip_name), 'zip', tmp_new_data_dir)
+    shutil.make_archive(os.path.join(datasets_dir, new_zip_name), 'zip', tmp_new_data_dir)
 
     print("New data added successfully.")
 
