@@ -1,0 +1,55 @@
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+    color: #e53935;
+}
+
+.description {
+    color: #666;
+}
+
+.upload-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #992525;
+}
+
+.hidden {
+    display: none;
+}
+
+.prediction-text {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#uploadedImage{
+    max-height: 400px;
+    max-width: 400px;
+}
