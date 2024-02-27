@@ -1,7 +1,5 @@
 import os
-import shutil
 import unittest
-import zipfile
 from datetime import datetime
 from addData import get_last_zip, add_new_data
 
