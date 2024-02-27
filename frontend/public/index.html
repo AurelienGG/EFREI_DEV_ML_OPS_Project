@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex Prediction</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pokedex Prediction</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Pokédex Image Predictor</h1>
+        <h1 class="title">Pokedex</h1>
         <p class="description">Upload an image of a Pokémon, and let the AI predict its name!</p>
-        <form id="uploadForm" enctype="multipart/form-data">
-            <input type="file" id="imageInput" name="file" accept="image/*">
-            <button type="submit" class="upload-btn">Predict</button>
-        </form>
-        <div id="predictionResult" class="hidden">
-            <p class="prediction-text">Prediction: <span id="prediction"></span></p>
+        <input type="file" id="imageUpload" accept="image/*">
+        <button class="upload-btn" onclick="uploadAndPredict()">Upload and Predict</button>
+
+        <div id="imagePreview">
+            <img id="uploadedImage" src="" alt="Uploaded Image" hidden>
+        </div>
+
+        <div id="predictionResult" hidden>
+            <!-- Prediction results will be displayed here -->
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@ body, html {
 }
 
 .upload-btn:hover {
-    background-color: #d32f2f;
+    background-color: #992525;
 }
 
 .hidden {
@@ -47,4 +47,9 @@ body, html {
 .prediction-text {
     margin-top: 20px;
     font-size: 1.2em;
+}
+
+#uploadedImage{
+    max-height: 400px;
+    max-width: 400px;
 }
